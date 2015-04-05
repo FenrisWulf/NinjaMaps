@@ -80,6 +80,7 @@ function getImageUrl(searchTerm, callback, errorCallback) {
     console.assert(
         typeof imageUrl == 'string' && !isNaN(width) && !isNaN(height),
         'Unexpected respose from the Google Image Search API!');
+    console.log("This work??");
     callback(imageUrl, width, height);
   };
   x.onerror = function() {
@@ -91,12 +92,16 @@ function getImageUrl(searchTerm, callback, errorCallback) {
 function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
+ // alert("COO/L");
 
 document.addEventListener('DOMContentLoaded', function() {
+ console.log ("help");
+ // alert("testA");
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
     renderStatus('Performing Google Image search for ' + url);
-
+ console.log(url);
+ console.log ("boohiss");
     getImageUrl(url, function(imageUrl, width, height) {
 
       renderStatus('Search term: ' + url + '\n' +
