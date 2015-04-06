@@ -86,7 +86,7 @@ function LocalMain() {
 
 	  	if (cid == '101') {
 	  		console.log('adding new element!');
-	  		uls[i].insertBefore(node, uls[i].childNodes[2]);
+	  		uls[i].insertBefore(node, uls[i].childNodes[4]);
 	  		hasAdded = 1;
 	  	}
   	}
