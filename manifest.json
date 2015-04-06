@@ -6,17 +6,9 @@
   "content_scripts": [
     {
       "matches": ["https://www.google.com/maps/*"],
-      // "css": ["mystyles.css"],
+      "css": ["ninja.css"],
       "js": ["jquery.js", "ninja.js"]
     }
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://maps.google.com/",
-    "https://ajax.googleapis.com/"
   ]
+  
 }
